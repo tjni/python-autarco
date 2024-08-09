@@ -37,7 +37,7 @@ jobs:
       - name: 🚀 Run pytest
         run: poetry run pytest -v --cov src tests
       - name: ⬆️ Upload coverage artifact
-        uses: actions/upload-artifact@v4.3.4
+        uses: actions/upload-artifact@v4.3.6
         with:
           name: coverage-${{ matrix.python }}
           path: .coverage
